@@ -1,0 +1,19 @@
+{
+  "tools": [
+    {
+      "name": "place_order",
+      "description": "Place an order by running the PlaceOrder Workflow Core workflow to completion.",
+      "workflowId": "PlaceOrder",
+      "version": 1,
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "orderId": { "type": "string" },
+          "quantity": { "type": "integer" },
+          "unitPrice": { "type": "number" }
+        },
+        "required": ["orderId", "quantity", "unitPrice"]
+      }
+    }
+  ]
+}
